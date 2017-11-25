@@ -1,0 +1,105 @@
+.mo-fire {
+  position: absolute;
+  top: 95%;
+  transform: rotateX(180deg);
+  width: 80px;
+}
+
+.fireTakeOff {
+  animation: fireTakeOff 2s linear forwards;
+}
+
+.flyFire {
+  animation: flyFire 1s linear infinite alternate;
+}
+
+.flameWobble {
+  animation: flameWobble 3s linear infinite;
+}
+
+.mo-fire svg {
+  height: auto;
+  position: relative;
+  width: 100%;
+}
+
+.flamefly {
+  animation: flamefly 2s linear infinite;
+}
+
+.flame {
+  opacity: 0;
+  transform-origin: 50% 50% 0;
+}
+
+.flame.one {
+  animation-delay: 1s;
+  animation-duration: 3s;
+}
+
+.flame3.two {
+  animation-duration: 5s;
+  animation-delay: 1s;
+}
+
+.flame-main.one {
+  animation-duration: 4s;
+  animation-delay: 1s;
+}
+
+.flame-main.two {
+  animation-duration: 3s;
+  animation-delay: 2s;
+}
+
+.flame-main.three {
+  animation-duration: 2.1s;
+  animation-delay: 3s;
+}
+
+.flame-main.four {
+  animation-duration: 3.2s;
+  animation-delay: 4s;
+}
+
+.flame-main.five {
+  animation-duration: 2.5s;
+  animation-delay: 5s;
+}
+
+@keyframes flameWobble {
+  50% {
+    transform: scale(1, 1.2) translate(0, -20px) rotate(-2deg);
+  }
+}
+
+@keyframes flamefly {
+  0% {
+    transform: translate(0) rotate(180deg);
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    transform: translate(-20px, -100px) rotate(180deg);
+    opacity: 0;
+  }
+}
+
+@keyframes flyFire {
+  0% {
+    transform: translateY(-80px) rotateX(180deg);
+  }
+  100% {
+    transform: translateY(-110px) rotateX(180deg);
+  }
+}
+
+@keyframes fireTakeOff {
+  0% {
+    transform: translateY(0) rotateX(180deg);
+  }
+  100% {
+    transform: translateY(-80px) rotateX(180deg);
+  }
+}

@@ -1,0 +1,26 @@
+.smokeTageOff {
+  animation: fume 4s linear alternate forwards;
+}
+
+.smoke {
+  transform: translateY(-150px) scale(1);
+}
+
+@keyframes fume {
+  0% {
+    opacity: 1;
+    transform: translateY(-150px) scale(1);
+  }
+  25% {
+    opacity: 0.5;
+    transform: translateY(-600px) scale(1.3);
+  }
+  75% {
+    opacity: 1;
+    transform: translateY(-600px) scale(1.3); 
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(-600px) scale(1.3);     
+  }
+}

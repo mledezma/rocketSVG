@@ -1,0 +1,155 @@
+.rocket-graph {
+  height: 350px;
+  position: relative; }
+
+.rocket-container {
+  position: absolute;
+  width: 100px; }
+
+.lines {
+  fill: none;
+  stroke: #F1912E;
+  stroke-width: 16;
+  stroke-miterlimit: 10;
+  transform: translateY(-320px); }
+
+.takeOff {
+  animation: takeOff 2s linear forwards;
+  transform: translateY(0); }
+
+.fly {
+  animation: fly 1s linear infinite alternate; }
+
+.line1 {
+  animation: line1 0.5s linear infinite alternate; }
+
+.line2 {
+  animation: line2 0.5s linear infinite alternate; }
+
+.line3 {
+  animation: line3 0.5s linear infinite alternate; }
+
+@keyframes takeOff {
+  0% {
+    transform: translateY(0); }
+  100% {
+    transform: translateY(-300px); } }
+@keyframes fly {
+  0% {
+    transform: translateY(-300px); }
+  100% {
+    transform: translateY(-370px); } }
+@keyframes line1 {
+  0% {
+    transform: translateY(-340px); }
+  100% {
+    transform: translateY(-280px); } }
+@keyframes line3 {
+  0% {
+    transform: translateY(-320px); }
+  100% {
+    transform: translateY(-390px); } }
+@keyframes line2 {
+  0% {
+    transform: translateY(-340px); }
+  100% {
+    transform: translateY(-280px); } }
+.mo-fire {
+  position: absolute;
+  top: 95%;
+  transform: rotateX(180deg);
+  width: 80px; }
+
+.fireTakeOff {
+  animation: fireTakeOff 2s linear forwards; }
+
+.flyFire {
+  animation: flyFire 1s linear infinite alternate; }
+
+.flameWobble {
+  animation: flameWobble 3s linear infinite; }
+
+.mo-fire svg {
+  height: auto;
+  position: relative;
+  width: 100%; }
+
+.flamefly {
+  animation: flamefly 2s linear infinite; }
+
+.flame {
+  opacity: 0;
+  transform-origin: 50% 50% 0; }
+
+.flame.one {
+  animation-delay: 1s;
+  animation-duration: 3s; }
+
+.flame3.two {
+  animation-duration: 5s;
+  animation-delay: 1s; }
+
+.flame-main.one {
+  animation-duration: 4s;
+  animation-delay: 1s; }
+
+.flame-main.two {
+  animation-duration: 3s;
+  animation-delay: 2s; }
+
+.flame-main.three {
+  animation-duration: 2.1s;
+  animation-delay: 3s; }
+
+.flame-main.four {
+  animation-duration: 3.2s;
+  animation-delay: 4s; }
+
+.flame-main.five {
+  animation-duration: 2.5s;
+  animation-delay: 5s; }
+
+@keyframes flameWobble {
+  50% {
+    transform: scale(1, 1.2) translate(0, -20px) rotate(-2deg); } }
+@keyframes flamefly {
+  0% {
+    transform: translate(0) rotate(180deg); }
+  50% {
+    opacity: 1; }
+  100% {
+    transform: translate(-20px, -100px) rotate(180deg);
+    opacity: 0; } }
+@keyframes flyFire {
+  0% {
+    transform: translateY(-80px) rotateX(180deg); }
+  100% {
+    transform: translateY(-110px) rotateX(180deg); } }
+@keyframes fireTakeOff {
+  0% {
+    transform: translateY(0) rotateX(180deg); }
+  100% {
+    transform: translateY(-80px) rotateX(180deg); } }
+.smokeTageOff {
+  animation: fume 4s linear alternate forwards; }
+
+.smoke {
+  transform: translateY(-150px) scale(1); }
+
+@keyframes fume {
+  0% {
+    opacity: 1;
+    transform: translateY(-150px) scale(1); }
+  25% {
+    opacity: 0.5;
+    transform: translateY(-600px) scale(1.3); }
+  75% {
+    opacity: 1;
+    transform: translateY(-600px) scale(1.3); }
+  100% {
+    opacity: 0;
+    transform: translateY(-600px) scale(1.3); } }
+.hidden {
+  display: none; }
+
+/*# sourceMappingURL=styles.css.map */

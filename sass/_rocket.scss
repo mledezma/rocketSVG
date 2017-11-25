@@ -1,0 +1,83 @@
+.rocket-graph {
+  height: 350px;
+  position: relative;
+}
+
+.rocket-container {
+  position: absolute;
+  width: 100px;
+}
+
+.lines {
+  fill: none;
+  stroke: #F1912E;
+  stroke-width: 16;
+  stroke-miterlimit: 10;
+  transform: translateY(-320px);
+}
+
+.takeOff {
+  animation: takeOff 2s linear forwards;
+  transform: translateY(0)
+}
+
+.fly {
+  animation: fly 1s linear infinite alternate;
+}
+
+.line1 {
+  animation: line1 0.5s linear infinite alternate;
+}
+
+.line2 {
+  animation: line2 0.5s linear infinite alternate;
+}
+
+.line3 {
+  animation: line3 0.5s linear infinite alternate;
+}
+
+@keyframes takeOff {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-300px);
+  }
+}
+
+@keyframes fly {
+  0% {
+    transform: translateY(-300px);
+  }
+  100% {
+    transform: translateY(-370px);
+  }
+}
+
+@keyframes line1 {
+  0% {
+    transform: translateY(-340px);
+  }
+  100% {
+    transform: translateY(-280px);
+  }
+}
+
+@keyframes line3 {
+  0% {
+    transform: translateY(-320px);
+  }
+  100% {
+    transform: translateY(-390px);
+  }
+}
+
+@keyframes line2 {
+  0% {
+    transform: translateY(-340px);
+  }
+  100% {
+    transform: translateY(-280px);
+  }
+}
